@@ -1,0 +1,101 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-6">
+
+    <!-- Header row -->
+    <div class="flex items-end justify-between">
+      <div>
+        <span class="text-xs font-semibold tracking-widest uppercase" style="color:#F97316">Core Features</span>
+        <h2 class="font-black mt-1 leading-tight" style="color:#1A3B6E; font-size:1.9rem">Built for the warehouse floor</h2>
+      </div>
+      <!-- Persona chip -->
+      <div class="flex items-center gap-2 px-4 py-2 rounded-full" style="background:#1A3B6E">
+        <div class="w-2 h-2 rounded-full" style="background:#F97316"></div>
+        <span class="text-sm font-semibold" style="color:white">Warehouse Supervisor</span>
+      </div>
+    </div>
+
+    <!-- Feature grid (2x2) -->
+    <div class="grid grid-cols-2 gap-4 flex-1">
+
+      <!-- Feature 1: Inbound -->
+      <div class="flex flex-col gap-3 p-6 rounded-2xl" style="background:#EFF6FF; border:1.5px solid #BFDBFE">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#1A3B6E">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3M21 12H9m0 0l3-3m-3 3l3 3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-base font-bold" style="color:#1A3B6E">Inbound Shipment Tracker</h3>
+          <p class="text-sm leading-relaxed mt-1" style="color:#475569">Log expected shipments before they arrive. Track status from ETA through dock assignment to confirmed receipt. Capture carrier details and expected quantities.</p>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-auto">
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:#DBEAFE; color:#1E40AF">ETA Tracking</span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:#DBEAFE; color:#1E40AF">Dock Assignment</span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:#DBEAFE; color:#1E40AF">Receipt Confirm</span>
+        </div>
+      </div>
+
+      <!-- Feature 2: Storage -->
+      <div class="flex flex-col gap-3 p-6 rounded-2xl" style="background:#FFF7ED; border:1.5px solid #FED7AA">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#F97316">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="white" stroke-width="2"/>
+            <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="white" stroke-width="2"/>
+            <rect x="3" y="14" width="7" height="7" rx="1.5" stroke="white" stroke-width="2"/>
+            <rect x="14" y="14" width="7" height="7" rx="1.5" stroke="white" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-base font-bold" style="color:#C2410C">Storage Location Manager</h3>
+          <p class="text-sm leading-relaxed mt-1" style="color:#475569">Assign every item to a specific zone, aisle, and bin. Instantly search and locate inventory by SKU or slot. Full movement history so nothing disappears without a trace.</p>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-auto">
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:#FED7AA; color:#9A3412">Zone / Aisle / Bin</span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:#FED7AA; color:#9A3412">Instant Search</span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:#FED7AA; color:#9A3412">Move History</span>
+        </div>
+      </div>
+
+      <!-- Feature 3: Outbound -->
+      <div class="flex flex-col gap-3 p-6 rounded-2xl" style="background:#F0FDF4; border:1.5px solid #A7F3D0">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#10B981">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-base font-bold" style="color:#065F46">Outbound Order Board</h3>
+          <p class="text-sm leading-relaxed mt-1" style="color:#475569">Manage orders end-to-end: generate pick lists, track packing status, flag blockers, and confirm dispatch. Every order's status visible at a glance.</p>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-auto">
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:#A7F3D0; color:#064E3B">Pick Lists</span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:#A7F3D0; color:#064E3B">Pack Status</span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:#A7F3D0; color:#064E3B">Dispatch Confirm</span>
+        </div>
+      </div>
+
+      <!-- Feature 4: Dashboard (dark card) -->
+      <div class="flex flex-col gap-3 p-6 rounded-2xl" style="background:#1A3B6E">
+        <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(249,115,22,0.28)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="3" width="8" height="8" rx="1.5" stroke="#F97316" stroke-width="2"/>
+            <rect x="13" y="3" width="8" height="5" rx="1.5" stroke="#F97316" stroke-width="2"/>
+            <rect x="3" y="13" width="8" height="8" rx="1.5" stroke="white" stroke-width="2"/>
+            <rect x="13" y="10" width="8" height="11" rx="1.5" stroke="white" stroke-width="2"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-base font-bold" style="color:white">Supervisor Dashboard</h3>
+          <p class="text-sm leading-relaxed mt-1" style="color:#94A3B8">Live counts across open inbounds, storage utilization, and pending outbound orders — with alerts for anything needing immediate action.</p>
+        </div>
+        <div class="flex flex-wrap gap-2 mt-auto">
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:rgba(249,115,22,0.28); color:#FED7AA">Live Counts</span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:rgba(255,255,255,0.14); color:#CBD5E1">Status Alerts</span>
+          <span class="text-xs px-2 py-0.5 rounded-full font-medium" style="background:rgba(255,255,255,0.14); color:#CBD5E1">Command View</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>

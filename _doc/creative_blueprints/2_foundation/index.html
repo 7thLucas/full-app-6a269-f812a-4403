@@ -1,40 +1,126 @@
 <style>
-  .mode-landscape .sl-foundation-layout { display: flex; flex-direction: row; align-items: stretch; min-height: 100%; }
-  .mode-landscape .sl-content-panel { width: 55%; padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
-  .mode-landscape .sl-visual-panel { width: 45%; min-height: 0; }
-  .mode-portrait .sl-foundation-layout { display: flex; flex-direction: column; min-height: 100%; }
-  .mode-portrait .sl-content-panel { padding: 2rem 1.5rem; }
-  .mode-portrait .sl-visual-panel { min-height: 280px; }
+.mode-landscape .sl-layout { flex-direction: row; height: 100%; }
+.mode-portrait .sl-layout { flex-direction: column; height: 100%; }
+.mode-landscape .sl-problem { width: 48%; }
+.mode-landscape .sl-solution { width: 52%; }
+.mode-portrait .sl-problem { width: 100%; flex: 1; }
+.mode-portrait .sl-solution { width: 100%; flex: 1; }
 </style>
-<section class="w-full h-full overflow-auto bg-white">
-  <div class="sl-foundation-layout">
-    <div class="sl-content-panel">
-      <div class="flex items-center justify-between mb-4">
-        <span class="inline-block text-xs font-semibold tracking-widest uppercase" style="color:#2563eb;">Foundation</span>
-        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 border rounded-full" style="background-color:#2563eb; border-color:#2563eb30;">
-          <span class="text-xs font-semibold" style="color:#ffffff;">Validated</span>
 
-        </span>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex w-full h-full">
+
+    <!-- Left: The Problem (dark) -->
+    <div class="sl-problem flex flex-col justify-center p-12" style="background:#1A3B6E">
+      <div class="mb-8">
+        <span class="text-xs font-semibold tracking-widest uppercase" style="color:#F97316">The Problem</span>
+        <h2 class="font-black mt-2 leading-tight" style="color:#FFFFFF; font-size:1.9rem; line-height:1.15">
+          Warehouses run on<br/>guesswork and radio
+        </h2>
       </div>
-      <h1 class="text-3xl font-bold text-slate-900 leading-tight mb-8">Inventory Chaos</h1>
-      <div class="space-y-5">
-        <div class="border-l-4 pl-4 relative" style="border-color:#F43F5E;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#E11D48;">The Problem</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Warehouse supervisors struggle with manual inventory tracking, leading to misplaced items, slow order fulfillment, and operational bottlenecks that impact profitability.</p>
+
+      <div class="flex flex-col gap-5">
+
+        <div class="flex gap-3 items-start">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background:rgba(249,115,22,0.22)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#F97316" stroke-width="2"/><path d="M12 9v4M12 17h.01" stroke="#F97316" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="text-sm font-semibold" style="color:#F1F5F9">Shipments arrive unannounced</div>
+            <div class="text-xs leading-relaxed mt-0.5" style="color:#94A3B8">Docks clog, receiving slows, teams scramble without a plan</div>
+          </div>
         </div>
-        <div class="border-l-4 pl-4 relative" style="border-color:#2563eb;">
-          <h2 class="text-sm font-semibold uppercase tracking-wide mb-1" style="color:#2563eb;">The Solution</h2>
-          <p class="text-slate-700 leading-relaxed text-sm">Manual tracking systems lead to misplaced inventory, slow fulfillment, and operational inefficiencies that cost time and money.</p>
+
+        <div class="flex gap-3 items-start">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background:rgba(249,115,22,0.22)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#F97316" stroke-width="2"/><path d="M12 9v4M12 17h.01" stroke="#F97316" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="text-sm font-semibold" style="color:#F1F5F9">Inventory lands in the wrong spot</div>
+            <div class="text-xs leading-relaxed mt-0.5" style="color:#94A3B8">Workers spend hours searching instead of picking — fulfillment stalls</div>
+          </div>
         </div>
-        <div class="border-l-4 border-sky-500 pl-4 relative"><h2 class="text-sm font-semibold text-sky-600 uppercase tracking-wide mb-1">Target Audience</h2><p class="text-slate-700 leading-relaxed text-sm">Warehouse and Logistics Supervisors</p></div>
-        <div class="border-l-4 border-amber-500 pl-4 relative"><h2 class="text-sm font-semibold text-amber-600 uppercase tracking-wide mb-1">Personal Motivation</h2><p class="text-slate-700 leading-relaxed text-sm">Transform manual, error-prone inventory processes into a streamlined, accurate system that scales with business growth.</p></div>
+
+        <div class="flex gap-3 items-start">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background:rgba(249,115,22,0.22)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#F97316" stroke-width="2"/><path d="M12 9v4M12 17h.01" stroke="#F97316" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="text-sm font-semibold" style="color:#F1F5F9">Outbound orders stall mid-pick</div>
+            <div class="text-xs leading-relaxed mt-0.5" style="color:#94A3B8">Late shipments, customer complaints, and costly re-work follow</div>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-start">
+          <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style="background:rgba(249,115,22,0.22)">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" stroke="#F97316" stroke-width="2"/><path d="M12 9v4M12 17h.01" stroke="#F97316" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <div>
+            <div class="text-sm font-semibold" style="color:#F1F5F9">Supervisors manage by radio and memory</div>
+            <div class="text-xs leading-relaxed mt-0.5" style="color:#94A3B8">No single source of truth — reactive, not proactive</div>
+          </div>
+        </div>
+
       </div>
-      <div class="mt-6 flex flex-wrap gap-2"><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Inventory Management</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Warehouse Operations</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Logistics</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Fulfillment</span><span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full">Real-Time Tracking</span></div>
-      <div class="mt-8"><data-attribution /></div>
     </div>
-    <div class="sl-visual-panel relative">
-      <img src="http://localhost:8001/common/image-generation?prompt=warehouse+staff+manually+tracking+inventory+with+clipboards+and+scattered+paperwork&amp;keyspace=usbvuk12&amp;user_id=4403" alt="visual" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent opacity-40"></div>
+
+    <!-- Right: The Solution (light) -->
+    <div class="sl-solution flex flex-col p-12 gap-6" style="background:#F8FAFC">
+      <div>
+        <span class="text-xs font-semibold tracking-widest uppercase" style="color:#1A3B6E">The Solution</span>
+        <h2 class="font-black mt-2 leading-tight" style="color:#1A3B6E; font-size:1.9rem; line-height:1.15">
+          One screen.<br/>Total warehouse clarity.
+        </h2>
+        <p class="text-sm leading-relaxed mt-3" style="color:#475569">
+          FlowTrack gives warehouse supervisors a single command center covering every critical handoff — so every decision is backed by live data, not guesswork.
+        </p>
+      </div>
+
+      <!-- Solution pillars -->
+      <div class="flex flex-col gap-3 flex-1 justify-center">
+
+        <div class="flex items-center gap-3 p-4 rounded-2xl" style="background:white; border:1.5px solid #BFDBFE">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#EFF6FF">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h11a2 2 0 012 2v3M21 12H9m0 0l3-3m-3 3l3 3" stroke="#1A3B6E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="text-sm font-bold" style="color:#1E293B">Inbound Shipment Tracker</div>
+            <div class="text-xs" style="color:#64748B">Expected arrival → dock assignment → confirmed receipt</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-4 rounded-2xl" style="background:white; border:1.5px solid #FED7AA">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#FFF7ED">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" rx="1.5" stroke="#F97316" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1.5" stroke="#F97316" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1.5" stroke="#F97316" stroke-width="2"/><rect x="14" y="14" width="7" height="7" rx="1.5" stroke="#F97316" stroke-width="2"/></svg>
+          </div>
+          <div>
+            <div class="text-sm font-bold" style="color:#1E293B">Storage Location Manager</div>
+            <div class="text-xs" style="color:#64748B">Zone → aisle → bin, instantly searchable</div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 p-4 rounded-2xl" style="background:white; border:1.5px solid #A7F3D0">
+          <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#F0FDF4">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="text-sm font-bold" style="color:#1E293B">Outbound Order Board</div>
+            <div class="text-xs" style="color:#64748B">Pick → pack → dispatch, end to end</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom image -->
+      <div class="rounded-2xl overflow-hidden" style="height:120px">
+        <img
+          src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=clean%20organized%20warehouse%20with%20labeled%20shelves%20and%20clear%20aisles%2C%20bright%20modern%20industrial%20space%2C%20overhead%20view%2C%20professional"
+          alt="Organized warehouse"
+          class="w-full h-full object-cover"
+          style="object-position:center 60%"
+        />
+      </div>
     </div>
+
   </div>
 </section>
