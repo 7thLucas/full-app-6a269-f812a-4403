@@ -1,0 +1,71 @@
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12 gap-6">
+
+    <!-- Header -->
+    <div>
+      <span class="text-xs font-semibold tracking-widest uppercase" style="color:#F97316">What's Next</span>
+      <h2 class="font-black mt-1 leading-tight" style="color:#1A3B6E; font-size:1.9rem">Post-MVP roadmap</h2>
+      <p class="text-sm mt-1.5" style="color:#475569">Three high-impact capabilities shipping after the MVP — each one closing a remaining gap in the receive → store → ship loop.</p>
+    </div>
+
+    <!-- Feature cards -->
+    <div class="flex flex-col gap-4 flex-1">
+
+      <!-- 1: Outbound Order Dispatch Board -->
+      <div class="flex items-start gap-6 p-6 rounded-2xl flex-1" style="background:#1A3B6E">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background:rgba(249,115,22,0.25)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M9 17H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 17l2 2 4-4" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-3 mb-1.5">
+            <span class="text-base font-bold" style="color:white">Outbound Order Dispatch Board</span>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full" style="background:rgba(249,115,22,0.22); color:#FED7AA">Dispatch</span>
+          </div>
+          <p class="text-sm leading-relaxed" style="color:#94A3B8">A dedicated supervisor queue for reviewing, prioritizing, and gate-confirming outbound orders before truck departure. Per-order status (pick pending → packed → ready), blocker flags, and explicit dispatch confirmation — closing the last mile of the fulfillment loop.</p>
+        </div>
+      </div>
+
+      <!-- 2: Inventory Alert System -->
+      <div class="flex items-start gap-6 p-6 rounded-2xl flex-1" style="background:#FFF7ED; border:1.5px solid #FED7AA">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background:#FEF3C7">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-3 mb-1.5">
+            <span class="text-base font-bold" style="color:#92400E">Inventory Alert System</span>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full" style="background:#FEF3C7; color:#B45309">Proactive</span>
+          </div>
+          <p class="text-sm leading-relaxed" style="color:#78350F">Rule-based notifications surfaced in the dashboard — low-stock thresholds, unassigned storage locations, overdue inbound arrivals, and orders blocked by empty pick slots. Turns reactive radio calls into a structured, prioritized alert feed.</p>
+        </div>
+      </div>
+
+      <!-- 3: Shipment History & Audit Trail -->
+      <div class="flex items-start gap-6 p-6 rounded-2xl flex-1" style="background:#F0FDF4; border:1.5px solid #A7F3D0">
+        <div class="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center" style="background:#D1FAE5">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="14 2 14 8 20 8" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="16" y1="13" x2="8" y2="13" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+            <line x1="16" y1="17" x2="8" y2="17" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+            <polyline points="10 9 9 9 8 9" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <div class="flex items-center gap-3 mb-1.5">
+            <span class="text-base font-bold" style="color:#065F46">Shipment History &amp; Audit Trail</span>
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full" style="background:#D1FAE5; color:#047857">Traceability</span>
+          </div>
+          <p class="text-sm leading-relaxed" style="color:#064E3B">Searchable, filterable log of every inbound and outbound status transition — timestamped, actor-attributed, and detail-tagged. Supports end-of-shift reviews, discrepancy investigations, and carrier performance tracking.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
