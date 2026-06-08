@@ -50,8 +50,8 @@ FlowTrack is not a full WMS replacement — it is a focused supervisor tool: lea
 
 ## Planned Next Features (Post-MVP)
 
-1. **Outbound Order Dispatch Board** — A dedicated queue view for supervisors to review, prioritize, and confirm outbound orders before truck dispatch. Shows per-order status (pick pending, packed, ready), lets supervisors flag blockers, and confirms gate release. Reduces late shipments by giving supervisors explicit control of the final dispatch step.
+1. **Outbound Order Management** — Supervisors create dispatch orders, pull pick lists tied to confirmed storage locations, and mark individual line items and full orders as shipped. Closes the fulfillment loop: from a confirmed inbound storage slot straight through to a dispatched outbound order, with no manual status chasing.
 
-2. **Inventory Alert System** — Proactive, rule-based notifications surfaced inside the supervisor dashboard. Alerts fire on low-stock thresholds, items with no confirmed storage location, overdue inbound shipments, and orders blocked because a pick location is empty. Replaces reactive radio chasing with structured, prioritized alert feeds.
+2. **Live Inventory Dashboard** — A real-time operational view showing stock levels by zone, a location-utilization heatmap across aisles and bins, and proactive alerts for items that are unassigned, overdue, or approaching low-stock thresholds. Gives supervisors immediate situational awareness without querying individual records.
 
-3. **Shipment History & Audit Trail** — A searchable, filterable log of all inbound and outbound movements. Every status transition (expected → arrived → received, pick → packed → dispatched) is recorded with timestamp, actor, and details. Supports end-of-shift reviews, discrepancy investigations, and carrier performance tracking.
+3. **Barcode & QR Scan Support** — Mobile-friendly scan interface for receiving dock and dispatch confirmation. Scanning an item at inbound auto-logs its dock receipt and prompts for storage location assignment; scanning at dispatch confirms the pick and updates order status — eliminating manual data entry at both ends of the warehouse flow.
