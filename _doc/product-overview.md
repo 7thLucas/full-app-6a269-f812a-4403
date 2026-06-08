@@ -47,3 +47,11 @@ FlowTrack is not a full WMS replacement — it is a focused supervisor tool: lea
 - Access: Web application — desktop or warehouse kiosk
 - Roles: Warehouse Supervisor, Warehouse Manager, Admin
 - Tech: Remix + Express, MongoDB, Tailwind + shadcn/ui
+
+## Planned Next Features (Post-MVP)
+
+1. **Outbound Order Dispatch Board** — A dedicated queue view for supervisors to review, prioritize, and confirm outbound orders before truck dispatch. Shows per-order status (pick pending, packed, ready), lets supervisors flag blockers, and confirms gate release. Reduces late shipments by giving supervisors explicit control of the final dispatch step.
+
+2. **Inventory Alert System** — Proactive, rule-based notifications surfaced inside the supervisor dashboard. Alerts fire on low-stock thresholds, items with no confirmed storage location, overdue inbound shipments, and orders blocked because a pick location is empty. Replaces reactive radio chasing with structured, prioritized alert feeds.
+
+3. **Shipment History & Audit Trail** — A searchable, filterable log of all inbound and outbound movements. Every status transition (expected → arrived → received, pick → packed → dispatched) is recorded with timestamp, actor, and details. Supports end-of-shift reviews, discrepancy investigations, and carrier performance tracking.
